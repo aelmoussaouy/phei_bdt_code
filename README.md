@@ -45,8 +45,8 @@ There are **two ways** to run the code:
 
 | Macro | Description |
 |---|---|
-| `TMVA_training.C` | Trains a BDT on 7 mass variables and writes `TMVA_Output.root` and the weights to `dataset/weights/` |
-| `TMVA_applying.C` | Loads the trained BDT, applies it to signal and background events, and saves `bdt_response.png` and `BDT_applied.root` |
+| `scripts/TMVA_training.C` | Trains a BDT on 7 mass variables and writes `TMVA_Output.root` and the weights to `dataset/weights/` |
+| `scripts/TMVA_applying.C` | Loads the trained BDT, applies it to signal and background events, and saves `bdt_response.png` and `BDT_applied.root` |
 
 **Requirements:** a working [ROOT installation](https://root.cern/install/) with TMVA enabled (included by default).
 
