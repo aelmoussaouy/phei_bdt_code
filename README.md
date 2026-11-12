@@ -1,4 +1,4 @@
-# phei_bdt_code
+# phei_m2_ml
 
 Higgs boson event classification with Boosted Decision Trees (BDTs) using [ROOT](https://root.cern) and TMVA.
 
@@ -7,7 +7,7 @@ The input data, `data/Higgs_data.root`, contains two trees: `sig_tree` (signal) 
 ## Repository structure
 
 ```
-phei_bdt_code/
+phei_m2_ml/
 ├── courses/     # course material (coming soon)
 ├── exercices/   # exercises (coming soon)
 ├── scripts/     # Python notebooks and ROOT C++ macros
@@ -25,9 +25,9 @@ There are **two ways** to run the code:
 
 | Notebook | Description | Run |
 |---|---|---|
-| `scripts/ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/ROOT.ipynb) |
-| `scripts/Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Classification_Higgs_with_BDT_.ipynb) |
-| `scripts/Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Comparing_BDTs_Higgs_classfication.ipynb) |
+| `scripts/ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_m2_ml/blob/main/scripts/ROOT.ipynb) |
+| `scripts/Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_m2_ml/blob/main/scripts/Classification_Higgs_with_BDT_.ipynb) |
+| `scripts/Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_m2_ml/blob/main/scripts/Comparing_BDTs_Higgs_classfication.ipynb) |
 
 **Steps**
 
@@ -54,8 +54,8 @@ There are **two ways** to run the code:
 
 ```bash
 # 1. Get the code and data
-git clone https://github.com/aelmoussaouy/phei_bdt_code.git
-cd phei_bdt_code/scripts
+git clone https://github.com/aelmoussaouy/phei_m2_ml.git
+cd phei_m2_ml/scripts
 
 # 2. Train the BDT
 root -l -b -q TMVA_training.C
