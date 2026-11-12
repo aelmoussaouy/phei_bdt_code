@@ -1,15 +1,12 @@
 # phei_m2_ml
 
-Higgs boson event classification with Boosted Decision Trees (BDTs) using [ROOT](https://root.cern) and TMVA.
-
-The input data, `data/Higgs_data.root`, contains two trees: `sig_tree` (signal) and `bkg_tree` (background).
-
 ## Repository structure
 
 ```
 phei_m2_ml/
 ├── courses/     # course material (coming soon)
-├── exercices/   # exercises (coming soon)
+├── exercices/   # exercises
+├── solutions/   # solutions to the exercises
 ├── scripts/     # Python notebooks and ROOT C++ macros
 └── data/        # Higgs_data.root
 ```
