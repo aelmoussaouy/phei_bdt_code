@@ -4,7 +4,7 @@
 
 ```
 phei_m2_ml/
-├── courses/     # course material (coming soon)
+├── course/      # course material (coming soon)
 ├── exercices/   # exercises
 ├── solutions/   # solutions to the exercises
 ├── scripts/     # Python notebooks and ROOT C++ macros
