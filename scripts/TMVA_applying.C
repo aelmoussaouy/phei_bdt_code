@@ -7,7 +7,7 @@
 #include "TMVA/Reader.h"
 
 void TMVA_applying() {
-    TFile *inputFile = TFile::Open("Higgs_data.root");
+    TFile *inputFile = TFile::Open("../data/Higgs_data.root");
     TTree *trees[2] = {(TTree *)inputFile->Get("sig_tree"),
                        (TTree *)inputFile->Get("bkg_tree")};
 

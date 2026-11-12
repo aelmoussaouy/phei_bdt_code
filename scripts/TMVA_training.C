@@ -5,7 +5,7 @@
 #include "TMVA/Types.h"
 
 void TMVA_training() {
-    TFile *inputFile = TFile::Open("Higgs_data.root");
+    TFile *inputFile = TFile::Open("../data/Higgs_data.root");
     TTree *signalTree = (TTree *)inputFile->Get("sig_tree");
     TTree *backgroundTree = (TTree *)inputFile->Get("bkg_tree");
 

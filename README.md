@@ -2,7 +2,17 @@
 
 Higgs boson event classification with Boosted Decision Trees (BDTs) using [ROOT](https://root.cern) and TMVA.
 
-The input data, `Higgs_data.root`, contains two trees: `sig_tree` (signal) and `bkg_tree` (background).
+The input data, `data/Higgs_data.root`, contains two trees: `sig_tree` (signal) and `bkg_tree` (background).
+
+## Repository structure
+
+```
+phei_bdt_code/
+├── courses/     # course material (coming soon)
+├── exercices/   # exercises (coming soon)
+├── scripts/     # Python notebooks and ROOT C++ macros
+└── data/        # Higgs_data.root
+```
 
 There are **two ways** to run the code:
 
@@ -15,13 +25,13 @@ There are **two ways** to run the code:
 
 | Notebook | Description | Run |
 |---|---|---|
-| `ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/ROOT.ipynb) |
-| `Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/Classification_Higgs_with_BDT_.ipynb) |
-| `Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/Comparing_BDTs_Higgs_classfication.ipynb) |
+| `ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/ROOT.ipynb) |
+| `Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Classification_Higgs_with_BDT_.ipynb) |
+| `Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Comparing_BDTs_Higgs_classfication.ipynb) |
 
 **Steps**
 
-1. Download `Higgs_data.root` from this repository and upload it to the top level of your Google Drive (My Drive):
+1. Download `Higgs_data.root` from the `data/` folder of this repository and upload it to the top level of your Google Drive (My Drive):
    ```
    MyDrive/Higgs_data.root
    ```
@@ -45,7 +55,7 @@ There are **two ways** to run the code:
 ```bash
 # 1. Get the code and data
 git clone https://github.com/aelmoussaouy/phei_bdt_code.git
-cd phei_bdt_code
+cd phei_bdt_code/scripts
 
 # 2. Train the BDT
 root -l -b -q TMVA_training.C
@@ -58,4 +68,4 @@ root -l -e 'TMVA::TMVAGui("TMVA_Output.root")'
 ```
 
 Flags: `-l` skips the ROOT splash screen, `-b` runs in batch mode (no windows), and `-q` quits when the macro finishes.
-Run the macros from the repository folder so that `Higgs_data.root` is found.
+Run the macros from the `scripts/` folder: they read the data from `../data/Higgs_data.root`, and the output files are written to `scripts/`.
