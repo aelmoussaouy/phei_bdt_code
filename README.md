@@ -25,9 +25,9 @@ There are **two ways** to run the code:
 
 | Notebook | Description | Run |
 |---|---|---|
-| `ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/ROOT.ipynb) |
-| `Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Classification_Higgs_with_BDT_.ipynb) |
-| `Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Comparing_BDTs_Higgs_classfication.ipynb) |
+| `scripts/ROOT.ipynb` | Installs ROOT on Colab and runs a quick check | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/ROOT.ipynb) |
+| `scripts/Classification_Higgs_with_BDT_.ipynb` | Signal/background classification with a single TMVA BDT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Classification_Higgs_with_BDT_.ipynb) |
+| `scripts/Comparing_BDTs_Higgs_classfication.ipynb` | Comparison of several BDT configurations with ROC curves | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aelmoussaouy/phei_bdt_code/blob/main/scripts/Comparing_BDTs_Higgs_classfication.ipynb) |
 
 **Steps**
 
