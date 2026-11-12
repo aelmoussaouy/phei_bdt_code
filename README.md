@@ -21,9 +21,9 @@ There are **two ways** to run the code:
 
 **Steps**
 
-1. Download `Higgs_data.root` from this repository and upload it to your Google Drive at:
+1. Download `Higgs_data.root` from this repository and upload it to the top level of your Google Drive (My Drive):
    ```
-   MyDrive/Colab_Notebooks/Higgs_data.root
+   MyDrive/Higgs_data.root
    ```
    (or change `inputFileName` in the notebook to point to your copy).
 2. Click an **Open in Colab** badge above.
